@@ -69,7 +69,7 @@ jobs:
       - name: 메타데이터 추출
         uses: docker/metadata-action@v6
         with:
-          images: ${{env.REGISTRY}}/${{github.actor}}/${{github.repository}}
+          images: ${{env.REGISTRY}}/${{github.repository}}
           tags: |
             type=sha
 #            type=raw,value=${{needs.tagging.outputs.tag_name}}
